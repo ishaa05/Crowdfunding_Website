@@ -1,0 +1,28 @@
+.fundraising-section {
+  background-color: #b6dbb6; /* Light green background */
+  padding: 60px 20px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.title {
+  font-size: 36px;
+  color: #ffffff; /* Dark green color */
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.underline {
+  width: 80px;
+  height: 4px;
+  background-color: #094d09; /* Light yellow-green color for underline */
+  margin: 0 auto 20px auto;
+}
+
+.description {
+  font-size: 18px;
+  color: #ffffff; /* Grey color for the description text */
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}

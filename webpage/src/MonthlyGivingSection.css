@@ -1,0 +1,57 @@
+.monthly-giving-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f8f4;
+    padding: 40px 60px; /* Increased padding to adjust height */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .monthly-giving-content {
+    flex: 1;
+    padding-right: 30px;
+  }
+  
+  .monthly-giving-title {
+    font-size: 2rem;
+    color: #2d522d;
+    margin-bottom: 10px;
+  }
+  
+  .monthly-giving-description {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .monthly-giving-button {
+    background-color: #b7e3a6;
+    color: #2d522d;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .monthly-giving-button:hover {
+    background-color: #98c98b;
+  }
+  
+  .monthly-giving-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .monthly-giving-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  

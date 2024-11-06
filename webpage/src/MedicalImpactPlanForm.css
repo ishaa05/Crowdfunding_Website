@@ -1,0 +1,76 @@
+.medical-impact-plan {
+    background-color: #f3f0c4; /* Light yellow background */
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-title {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .form-subtitle {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  .form-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .form-column {
+    flex: 1;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #6c757d; /* Light grey for labels */
+    font-size: 16px;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background: none;
+    color: #333;
+    font-size: 14px;
+  }
+  
+  .form-input:focus {
+    outline: none;
+    border-bottom-color: #66bb6a; /* Green underline on focus */
+  }
+  
+  .submit-button {
+    background-color: #66bb6a; /* Green button */
+    color: white;
+    font-size: 18px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 30px;
+  }
+  
+  .submit-button:hover {
+    background-color: #57a35a; /* Darker green on hover */
+  }
+  

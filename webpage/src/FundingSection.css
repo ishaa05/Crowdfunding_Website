@@ -1,0 +1,59 @@
+/* FundingSection.css */
+.funding-container {
+    background-color: #b7e3a6; /* Light green gradient */
+    padding: 40px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .header p {
+    font-size: 1.2rem;
+    color: #6a8f61;
+    margin-bottom: 40px;
+  }
+  
+  .funding-options {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+  .navbar .nav-link {
+    color: white !important;
+  }
+  
+  .navbar-brand {
+    color: white !important;
+  }
+  
+  .option {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .option-image {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .fund-button {
+    background-color: #5e7d58;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .fund-button:hover {
+    background-color:#4c6345;
+}

@@ -1,0 +1,79 @@
+.fundbridge-container {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #e0f2f1, #b9fbc0); /* Gradient background with shades of green */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.fundbridge-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #004d40; /* Dark green color for title */
+}
+
+.fundbridge-subtitle {
+  font-size: 18px;
+  color: #00796b; /* Medium green color for subtitle */
+  margin-bottom: 30px;
+  max-width: 800px;
+}
+
+.fundbridge-categories {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.category-card {
+  position: relative;
+  overflow: hidden;
+  width: 300px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  background: #ffffff; /* White background for cards to contrast with images */
+}
+
+.category-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.cover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  transition: transform 0.5s;
+}
+
+.category-card:hover .cover-image {
+  transform: scale(1.1);
+}
+
+.category-card h3 {
+  position: relative;
+  z-index: 1;
+  color: #ffffff; /* White text color */
+  font-size: 20px;
+  margin: 0;
+  padding: 10px 15px;
+  background: rgba(0, 77, 64, 0.6); /* Semi-transparent dark green background for text */
+  border-radius: 8px;
+}

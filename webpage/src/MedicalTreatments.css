@@ -1,0 +1,72 @@
+.form-container {
+    background-color: #f7f2d9; /* Light beige background */
+    padding: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .form-title {
+    font-size: 32px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .form-subtitle {
+    font-size: 16px;
+    color: #555;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .medical-impact-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+    outline: none;
+  }
+  
+  .form-group input:focus {
+    border-color: #2e7d32; /* Green border on focus */
+  }
+  
+  .submit-btn {
+    grid-column: span 2;
+    padding: 15px;
+    background-color: #2e7d32; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .submit-btn:hover {
+    background-color: #1b5e20; /* Darker green on hover */
+  }
+  

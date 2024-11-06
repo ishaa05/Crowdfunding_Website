@@ -1,0 +1,88 @@
+/* DonationForm.css */
+.container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f5f5d6;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .image-section {
+    flex: 1;
+  }
+  
+  .impact-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .form-section {
+    flex: 1;
+    padding-left: 20px;
+  }
+  
+  h2 {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .donation-options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .donation-options button {
+    background-color: #e0e0e0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .donation-options button.selected {
+    background-color: #32a852;
+    color: white;
+  }
+  
+  .other-amount-btn {
+    background-color: #e0e0e0;
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .donation-form {
+    margin-top: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .donate-btn {
+    background-color: #d3d3d3;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-top:10px;
+}
