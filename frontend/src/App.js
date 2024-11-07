@@ -39,7 +39,7 @@ function App() {
         <Route path="/social-cause" element={<FundingSectionSocial />} />
         <Route path="/raise-funds" element={<RaiseFunds />} />
         <Route path="/campaigns" element={<Campaigns />} />
-        <Route path='' element={<LoginSignup/>}/>
+        <Route path='/LoginSignup' element={<LoginSignup/>}/>
         {/* Add more routes as needed */}
       </Routes>
     </Router>

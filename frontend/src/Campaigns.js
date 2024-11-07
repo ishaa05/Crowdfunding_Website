@@ -60,7 +60,7 @@ const Campaigns = () => {
             <p>{campaign.phone}</p>
             <img src={campaign.image} />
             <div className="card-buttons">
-              <button className="donate-button">Donate Now</button>
+              <button className="donate-button" onClick={() => window.open("./src/ind.html", "_blank")}>Donate Now</button>
               <button className="details-button">Details</button>
             </div>
           </div>

@@ -13,7 +13,7 @@ app.use(express.json());
 
 // CORS configuration
 const corsOptions = {
-  origin: 'http://localhost:3000', // Replace with your frontend URL
+  origin: 'deploy-frontend-theta.vercel.app', // Replace with your frontend URL
   credentials: true,
 };
 app.use(cors(corsOptions));
