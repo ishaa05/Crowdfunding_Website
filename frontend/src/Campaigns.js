@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './Campaigns.css';
 
+import { useNavigate } from 'react-router-dom';
+import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/clerk-react";
 const Campaigns = () => {
   const [campaigns, setCampaigns] = useState([]);
 
@@ -17,6 +19,36 @@ const Campaigns = () => {
   }, []);
 
   return (
+    <div>
+      <nav className="navbar navbar-expand-lg">
+        <a className="navbar-brand" href="#">FundBridge.com</a>
+        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav ms-auto"> {/* Changed from ml-auto to ms-auto for Bootstrap 5 */}
+            <li className="nav-item">
+              <a className="nav-link" href="#home">Home</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#faqs">FAQs</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#campaigns">Campaigns</a>
+            </li>
+          </ul>
+        </div>
+        <div className="login">
+          <header>
+            <SignedOut>
+              <SignInButton />
+            </SignedOut>
+            <SignedIn>
+              <UserButton />
+            </SignedIn>
+          </header>
+        </div>
+      </nav>
     <div className="campaigns-container">
       {campaigns.map((campaign) => (
         <div className="card" key={campaign._id}>
@@ -34,6 +66,7 @@ const Campaigns = () => {
           </div>
         </div>
       ))}
+    </div>
     </div>
   );
 };
