@@ -23,7 +23,8 @@ import { Cloudinary } from '@cloudinary/url-gen';
 import { auto } from '@cloudinary/url-gen/actions/resize';
 import { autoGravity } from '@cloudinary/url-gen/qualifiers/gravity';
 import { AdvancedImage } from '@cloudinary/react';
-
+import PaymentForm from  './PaymentForm.js';
+import LoginPay from  './LoginPay.js';
 
 function App() {
   return (
@@ -40,6 +41,9 @@ function App() {
         <Route path="/raise-funds" element={<RaiseFunds />} />
         <Route path="/campaigns" element={<Campaigns />} />
         <Route path='/LoginSignup' element={<LoginSignup/>}/>
+        <Route path='/LoginPay' element={<LoginPay/>}/>
+        <Route path='/PaymentForm' element={<PaymentForm/>}/>
+
         {/* Add more routes as needed */}
       </Routes>
     </Router>

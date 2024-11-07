@@ -42,6 +42,7 @@ const LoginSignup = () => {
       storeToken(accessToken, refreshToken, expiresIn);
       setIsValidSignUp(1);
       window.scrollTo(0, 0);
+      
     } catch (error) {
       setIsValidSignUp(0);
       console.error("Signup or login error:", error.response?.data || error.message);
@@ -63,6 +64,7 @@ const LoginSignup = () => {
       storeToken(accessToken, refreshToken, expiresIn);
       setIsValidLogin(1);
       window.scrollTo(0, 0);
+      navigate("/");
     } catch (error) {
       setIsValidLogin(0);
       console.error("Login error:", error.response?.data || error.message);

@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/clerk-react";
 const Campaigns = () => {
   const [campaigns, setCampaigns] = useState([]);
-
+  const navigate = useNavigate();
   useEffect(() => {
     // Fetch campaigns from backend
     axios.get('http://localhost:5000/campaigns/api')
@@ -28,13 +28,11 @@ const Campaigns = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto"> {/* Changed from ml-auto to ms-auto for Bootstrap 5 */}
             <li className="nav-item">
-              <a className="nav-link" href="#home">Home</a>
+              <a className="nav-link" href="http://localhost:3000/">Home</a>
             </li>
+            
             <li className="nav-item">
-              <a className="nav-link" href="#faqs">FAQs</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#campaigns">Campaigns</a>
+              <a className="nav-link" href="http://localhost:3000/raise-funds">Raise Funds</a>
             </li>
           </ul>
         </div>
@@ -60,8 +58,8 @@ const Campaigns = () => {
             <p>{campaign.phone}</p>
             <img src={campaign.image} />
             <div className="card-buttons">
-              <button className="donate-button" onClick={() => window.open("./src/ind.html", "_blank")}>Donate Now</button>
-              <button className="details-button">Details</button>
+              <button className="donate-button" onClick={() => navigate('/PaymentForm')}>Donate Now</button>
+              <button className="details-button" onClick={() => window.location.href = 'http://localhost:8501/'}>Details</button>
             </div>
           </div>
         </div>

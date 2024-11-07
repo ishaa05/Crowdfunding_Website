@@ -94,9 +94,7 @@ const FundingSection = () => {
             <li className="nav-item">
               <a className="nav-link" href="#home">Home</a>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#faqs">FAQs</a>
-            </li>
+            
             <li className="nav-item">
               <a className="nav-link" href="#campaigns">Campaigns</a>
             </li>
